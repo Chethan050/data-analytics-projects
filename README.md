@@ -1,33 +1,35 @@
-# Data Analytics Projects
+# Automobile Sales Analysis Dashboard
 
-A collection of data analysis and machine learning projects completed during my Master's coursework and the IBM Data Analyst Professional Certificate (Coursera), applying Python, SQL, and data visualization to real-world datasets.
+Analysis of historical automobile sales data to understand how sales patterns change during economic recessions, using static visualizations and an interactive dashboard.
 
-## Projects
+## Project Structure
 
-### 1. SQL Data Analysis on Civic Datasets
-**File:** `01-sql-civic-data-analysis.ipynb`
+- `automobile_sales_visualizations.ipynb` — Static visualizations (Matplotlib, Seaborn, Folium): sales trends by year, advertising spend vs. sales, sales by vehicle type, GDP comparison during recession vs. non-recession, seasonality effects, consumer confidence, and a map of sales by office location.
+- `automobile_sales_dashboard.py` — Interactive dashboard built with Plotly Dash. Lets the user choose "Yearly Statistics" or "Recession Period Statistics" and a year, then renders the relevant charts (sales trend, sales by vehicle type, advertising expenditure share, and effect of unemployment rate on sales).
 
-Loaded Chicago census, public schools, and crime datasets into a SQLite database and wrote SQL queries to answer a series of analytical questions. Covered aggregation, filtering, sorting/ranking, and correlated subqueries — including identifying the community areas with the highest hardship index and highest crime rates.
+## Key Questions Explored
 
-**Tools:** Python, SQLite, SQL
+- How do automobile sales fluctuate year to year, and how do they behave specifically during recession periods?
+- How does advertising expenditure track with sales during non-recession periods?
+- Which vehicle types are most/least affected by recessions?
+- How does GDP move differently during recession vs. non-recession periods?
+- What effect does unemployment rate have on sales by vehicle type?
 
-### 2. Stock Data Extraction & Revenue Dashboard
-**File:** `02-stock-revenue-dashboard.ipynb`
+## Tech Stack
 
-Extracted historical stock data using the `yfinance` API and web-scraped quarterly revenue data using `BeautifulSoup`. Cleaned and structured the revenue data, then built comparative visualizations plotting stock price against revenue over time for two companies.
+- Python, Pandas, NumPy
+- Matplotlib, Seaborn, Folium (static visualizations)
+- Plotly, Dash (interactive dashboard)
 
-**Tools:** Python, yfinance, BeautifulSoup, requests, Matplotlib, pandas
+## Running the Dashboard
 
-### 3. Classification Model Comparison
-**File:** `03-classification-model-comparison.ipynb`
+```bash
+pip install dash pandas plotly
+python automobile_sales_dashboard.py
+```
 
-Completed as part of a data science course during my Master's program (Scientific Instrumentation, 2nd semester). Explored and preprocessed a dataset, checked class balance, and applied Min-Max scaling. Trained and evaluated two classification models — SVM and Decision Tree — and compared their performance using accuracy scores, classification reports, and confusion matrices.
+Then open the local address shown in the terminal (usually `http://127.0.0.1:8050`).
 
-**Tools:** Python, pandas, scikit-learn, NumPy
+## Data Source
 
-## About
-
-These projects were built to develop practical, applied data analysis skills — from database querying and data cleaning to visualization and predictive modeling. Each notebook includes the full workflow from raw data to final output.
-
-**Author:** Chethan Sreekar Mandapati
-[LinkedIn](https://www.linkedin.com/in/chethan-sreekar-mandapati/)
+Automobile sales dataset (1980–2023) provided as part of the IBM Data Visualization with Python course.
