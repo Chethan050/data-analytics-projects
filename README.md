@@ -30,6 +30,13 @@ Analyzed historical automobile sales data to understand how sales patterns chang
 
 **Tools:** Python, Pandas, NumPy, Matplotlib, Seaborn, Folium, Plotly, Dash
 
+### 5. House Sales Price Prediction (King County, USA)
+**File:** `05-house-price-prediction.ipynb`
+
+Analyzed and modeled ~21,600 house sales in King County (Seattle area, 2014–2015). Cleaned missing bedroom/bathroom values, explored price correlations (waterfront view, square footage, grade), and built regression models — starting with single-feature linear regression, expanding to multi-feature regression, then a scaling + polynomial features pipeline, and finally Ridge regression with polynomial transforms, evaluated by R² on a held-out test set.
+
+**Tools:** Python, pandas, NumPy, seaborn, scikit-learn (Linear Regression, Ridge, Pipeline, PolynomialFeatures)
+
 ## About
 
 These projects were built to develop practical, applied data analysis skills — from database querying and data cleaning to visualization and predictive modeling. Each notebook includes the full workflow from raw data to final output.
