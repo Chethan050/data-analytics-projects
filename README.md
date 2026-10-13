@@ -37,6 +37,13 @@ Analyzed and modeled ~21,600 house sales in King County (Seattle area, 2014–20
 
 **Tools:** Python, pandas, NumPy, seaborn, scikit-learn (Linear Regression, Ridge, Pipeline, PolynomialFeatures)
 
+### 6. Medical Insurance Cost Analysis
+**File:** `06-insurance-cost-analysis.ipynb`
+
+Analyzed a medical insurance dataset (~2,770 records) to understand what drives annual insurance charges. Cleaned missing age and smoker values, ran EDA (charges vs. BMI, smoker status, correlation matrix) and found smoking status to be the dominant factor. Built single-variable and multi-variable linear regression models, a scaling + polynomial features pipeline, and Ridge regression with polynomial transforms evaluated on a held-out test set.
+
+**Tools:** Python, pandas, NumPy, seaborn, Matplotlib, scikit-learn (Linear Regression, Ridge, Pipeline, PolynomialFeatures)
+
 ## About
 
 These projects were built to develop practical, applied data analysis skills — from database querying and data cleaning to visualization and predictive modeling. Each notebook includes the full workflow from raw data to final output.
